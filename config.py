@@ -1,4 +1,4 @@
-"""Configuration du projet."""
+"""Configuration du projet.""
 
 SETTINGS = {
     'environment': 'production',
