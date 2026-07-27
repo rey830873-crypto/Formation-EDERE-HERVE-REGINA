@@ -1,6 +1,6 @@
 # Formation-EDERE-HERVE-REGINA
 
-Ce dépôt contient le projet du premier jour de formation Git/GitHub, Python et utilisation du terminal Linux.
+Ce dépôt contient le projet du premier jour de formation Git/GitHub, Python et environnement Linux.
 
 On y trouve une configuration initiale pour travailler en local, un fichier de documentation, et les premiers scripts du projet.
 
