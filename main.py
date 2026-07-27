@@ -1,4 +1,3 @@
-"""Script principal du projet."""
 
 from config import SETTINGS
 
