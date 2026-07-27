@@ -1,0 +1,57 @@
+# Virtual environment
+venv/
+ENV/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Byte-compiled / optimized / DLL files
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# Logs and database
+*.log
+*.sqlite3
+
+# env files
+.env
+.env.*
+
+# macOS
+.DS_Store
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage
+htmlcov/
+.coverage
+.coverage.*
+
+# pipenv
+Pipfile.lock
+
+# mypy
+.mypy_cache/
+
+# celery
+celerybeat-schedule
+
+# node
+node_modules/
+
+# misc
+thumbs.db
