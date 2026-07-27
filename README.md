@@ -1,6 +1,10 @@
 # Formation-EDERE-HERVE-REGINA
 
+<<<<<<< HEAD
 Ce dépôt contient le projet du premier jour de formation Git/GitHub, Python et shell Linux.
+=======
+Ce dépôt contient le projet du premier jour de formation Git/GitHub, Python et environnement Linux.
+>>>>>>> 85df4d7 (9. Add: Conflict branch README change)
 
 On y trouve une configuration initiale pour travailler en local, un fichier de documentation, et les premiers scripts du projet.
 
