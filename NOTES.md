@@ -6,3 +6,4 @@
 - Ajout d'un script principal main.py.
 - Ajout d'un fichier de configuration .
 - Préparation d'une branche et d'une pull request.
+- Ajout d'un fichier .gitignore
