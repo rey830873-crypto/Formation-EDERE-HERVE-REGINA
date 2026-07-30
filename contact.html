@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-4" href="index.html">HERVÉ REGINA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="apropos.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="competences.html">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projets.html">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section-contact">
+        <div class="container">
+            <h1 class="mb-5 text-center">Nous contacter</h1>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8">
+                    <div class="formulaire-contact">
+                        <form id="formContact" novalidate>
+                            <div class="mb-3">
+                                <label for="nom" class="form-label">Nom complet</label>
+                                <input type="text" class="form-control" id="nom" placeholder="Votre nom" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Adresse Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="votre@email.com" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Votre message..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100 py-2 fw-bold">Envoyer le message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const form = document.getElementById('formContact');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const nom = document.getElementById('nom');
+            const email = document.getElementById('email');
+            const message = document.getElementById('message');
+            
+            let valid = true;
+
+            if (nom.value.trim() === '') {
+                nom.classList.add('is-invalid');
+                nom.classList.remove('is-valid');
+                valid = false;
+            } else {
+                nom.classList.add('is-valid');
+                nom.classList.remove('is-invalid');
+            }
+
+            if (!email.value.includes('@') || email.value.trim() === '') {
+                email.classList.add('is-invalid');
+                email.classList.remove('is-valid');
+                valid = false;
+            } else {
+                email.classList.add('is-valid');
+                email.classList.remove('is-invalid');
+            }
+
+            if (message.value.trim().length < 5) {
+                message.classList.add('is-invalid');
+                message.classList.remove('is-valid');
+                valid = false;
+            } else {
+                message.classList.add('is-valid');
+                message.classList.remove('is-invalid');
+            }
+
+            if (valid) {
+                alert('Message envoyé! Merci de nous avoir contactés.');
+                form.reset();
+                nom.classList.remove('is-valid');
+                email.classList.remove('is-valid');
+                message.classList.remove('is-valid');
+            }
+        });
+    </script>
+</body>
+</html>
